@@ -1,0 +1,82 @@
+<!-- https://materializeweb.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.2-alpha/dist/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.2-alpha/dist/js/materialize.min.js"></script>
+  <script>
+    
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+          // specify options here
+        });
+      });
+    
+      document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('.modal');
+          var instances = M.Modal.init(elems, {
+            // specify options here
+          });
+        });
+  </script>
+</head>
+<body>
+  <div>
+    <a href="../index.html">Home</a>
+    <a href="./index.html">Back</a>
+  </div>
+  <h1>Materialize</h1>
+  <h2>Button</h2>
+  <a class="waves-effect waves-light btn">button</a>
+  <hr>
+  <h2>List / pagination</h2>
+    <ul class="pagination">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+  <hr>
+  <h2>Animation / Pulse</h2>
+  <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
+  <a class="btn-floating btn-large pulse"><i class="material-icons">cloud</i></a>
+  <a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a>
+
+  <hr />
+    <h2>Modal</h2>
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect btn-flat">Agree</a>
+      </div>
+    </div>
+  <hr />
+  <h2>Carousel</h2>
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://materializeweb.com/images/placeholder/250x250_a.png"></a>
+    <a class="carousel-item" href="#two!"><img src="https://materializeweb.com/images/placeholder/250x250_b.png"></a>
+    <a class="carousel-item" href="#three!"><img src="https://materializeweb.com/images/placeholder/250x250_c.png"></a>
+    <a class="carousel-item" href="#four!"><img src="https://materializeweb.com/images/placeholder/250x250_d.png"></a>
+    <a class="carousel-item" href="#five!"><img src="https://materializeweb.com/images/placeholder/250x250_e.png"></a>
+  </div>
+</body>
+</html> 

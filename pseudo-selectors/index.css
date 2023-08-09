@@ -1,0 +1,38 @@
+.hov:hover {
+  background-color: red;
+}
+
+.act:active {
+  background-color: blue;
+}
+
+.foc:focus {
+  background-color: green;
+}
+
+/* ELEMENTS */
+
+.fire::before {
+  content: '🔥 ';
+}
+
+.finished::after {
+  content: ' ✅';
+}
+
+.first-letter::first-letter {
+  font-size: 2em;
+  color: purple;
+}
+
+/* Attribute */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+[for*='ill'] {
+  font-weight: bold;
+  color: blue;
+}
