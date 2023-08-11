@@ -1,7 +1,16 @@
-.root {
+.all-my-kids-are-red {
   --color-red: red;
 }
 
-p {
+.all-my-kids-are-red > p {
   color: var(--color-red);
+}
+
+
+.all-my-kids-are-red {
+   p {
+     div {
+        color: red;
+     }
+   }
 }

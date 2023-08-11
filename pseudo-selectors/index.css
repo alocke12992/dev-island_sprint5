@@ -2,18 +2,18 @@
   background-color: red;
 }
 
-.act:active {
+.active:active {
   background-color: blue;
 }
 
-.foc:focus {
+.focus:focus {
   background-color: green;
 }
 
 /* ELEMENTS */
 
 .fire::before {
-  content: '🔥 ';
+  content: 'Andrew ';
 }
 
 .finished::after {
@@ -32,7 +32,7 @@
   justify-content: space-between;
 }
 
-[for*='ill'] {
+[test*='ill'] {
   font-weight: bold;
   color: blue;
 }
