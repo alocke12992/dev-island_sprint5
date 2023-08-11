@@ -1,0 +1,35 @@
+.blue {
+  border: solid 1px blue;
+}
+
+.red {
+  border: solid 1px red;
+}
+
+.green {
+  border: solid 1px green;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg {
+  width: 33%;
+}
+
+.content {
+  flex: 1;
+}
+
+.input-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
